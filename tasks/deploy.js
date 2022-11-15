@@ -6,9 +6,9 @@ task('deploy', 'Deploy contract')
   .setAction(async ({ descriptor, seeder }, { ethers, upgrades }) => {
     const NounsPods = await ethers.getContractFactory('NounsPods');
 
-    const nounsPods = await NounsPods.deploy('', { gasLimit: 3000000 });
+    const nounsPods = await NounsPods.deploy(descriptor, seeder);
 
-    await nounsPods.deployed(descriptor, seeder);
+    await nounsPods.deployed();
 
     console.log('Contract deployed to: ', NounsPods.address);
   });
