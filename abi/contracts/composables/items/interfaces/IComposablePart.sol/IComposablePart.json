@@ -1,0 +1,33 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPart",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes",
+            "name": "image",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bytes",
+            "name": "palette",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct ISVGRenderer.Part",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,32 @@
+node_modules
+.env
+coverage
+coverage.json
+typechain
+typechain-types
+cache
+artifacts
+
+#Hardhat files
+cache
+artifacts
+typechain
+.openzeppelin
+# Script output
+logs
+
+# Coverage result files
+coverage/
+coverage.json
+
+abi/@openzeppelin
+abi/contracts/base
+abi/contracts/external
+abi/contracts/governance
+abi/contracts/interfaces
+abi/contracts/proxies
+abi/contracts/test
+abi/contracts/libs
+
+images.svg
+yarn-error.log
